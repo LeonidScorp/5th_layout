@@ -48,7 +48,7 @@
 //     }
 // });
 
-var sections = $('section'), nav = $('.header-navigation'), nav_height = $('header').outerHeight();
+var sections = $('section'), nav = $('.main-menu'), nav_height = $('header').outerHeight();
 
 $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();

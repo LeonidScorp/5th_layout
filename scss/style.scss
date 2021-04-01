@@ -27,6 +27,7 @@ body {
 	font-family: "OpenSans";
 	font-size: 16px;
 	line-height: 1;
+	margin-top: 90px;
 }
 ol, ul {
 	list-style: none;
@@ -49,13 +50,99 @@ table {
 	src: url("fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
 
+@font-face {
+	font-family: "SourceSemiBold";
+	src: url("fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+}
+@font-face {
+	font-family: "SourceBold";
+	src: url("fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
 body {
 	font-family: "SourceSans";
 	font-size: 16px;
 }
 header {
+	display: flex;
+	align-items: center;
+	z-index: 1000;
+	width: 100%;
 	position: fixed;
+	height: 100px;
+	padding-top: 2px;
 }
-section {
-	border: solid 1px black;
+.main-menu-container {
+	display: flex;
+}
+.header-desktop {
+	display: flex;
+	width: 1170px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.main-menu {
+	.menu-link {
+		font-family: "SourceSans";
+		font-size: 16px;
+		line-height: 58px;
+		font-weight: 600;
+		color: #fffefe;
+		text-decoration: none;
+	}
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("fonts/Quicksand/static/Quicksand-Regular.ttf");
+}
+@font-face {
+	font-family: "QuickSemiBold";
+	src: url("fonts/Quicksand/static/Quicksand-SemiBold.ttf");
+}
+.logo {
+	display: flex;
+	align-items: center;
+	
+}
+
+.logo-subtext {
+	margin-left: 7px;
+	opacity: 0.3;
+	margin-top: 1px;
+
+	
+}
+#home {
+	.container {
+		height: 550px;
+		overflow: hidden;
+	}
+	img {
+		margin-top: 31px;
+		margin-left: 77px;
+	}
+	margin-top: -90px;
+	padding-top: 90px;
+	background-image: url("../images/bg2.png");
+	background-size: cover;
+	min-height: 550px;
+	
+}
+
+.home-title {
+	font-size: 48px;
+	line-height: 65px;
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.blue-subtitle {
+	font-family: "SourceBold";
+	font-size: 14px;
+	line-height: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #008ed6;
 }
