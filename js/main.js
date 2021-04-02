@@ -51,7 +51,13 @@
 var sections = $('section'), nav = $('.main-menu'), nav_height = $('header').outerHeight();
 
 $(window).on('scroll', function () {
+    var wintop = $('html').offset().top;
     var cur_pos = $(this).scrollTop();
+    if (cur_pos>wintop) {
+        $('header').css({'background-color': '#14141A', "transition-property": "background-color", "transition-duration": ".5s"});
+    } else {
+        $('header').css({"background-color": "transparent", "transition-property": "background-color", "transition-duration": ".5s"});
+    }
     sections.each(function() {
        var top = $(this).offset().top - nav_height,
         bottom = top + $(this).outerHeight();   
