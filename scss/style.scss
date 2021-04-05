@@ -119,7 +119,11 @@ header {
 }
 .main-menu-container {
 	display: flex;
-
+	margin-top: -5px;
+	// margin-right: -10px;
+	min-width: 447px;
+	margin-right: 2px;
+	justify-content: space-between;
 }
 .header-desktop {
 	display: flex;
@@ -136,8 +140,9 @@ header {
 		font-weight: 600;
 		color: #fffefe;
 		text-decoration: none;
-		padding: 0 10px;
+		// padding: 0 12px;
 	}
+	
 }
 .features-container .col-sm-3 .row {
 	display: flex;
@@ -196,16 +201,29 @@ h4.regular-title {
 	background-image: url("../images/bg2.png");
 	background-size: cover;
 	min-height: 550px;
-	
+	.p-text {
+		max-width: 490px;
+		margin-top: 23px;
+	}
+	.buttons {
+		margin-top: 61px;
+		.col-sm-3 {
+			margin-left:-1px;
+			padding-left: 0;
+			margin-right: 10px;
+		}
+	}
 }
 
 .home-title {
+	margin-top: 5px;
 	font-size: 48px;
-	line-height: 65px;
-	font-weight: 600;
+	line-height: 48px;
+	// font-weight: 600;
 	text-transform: none;
-	letter-spacing: normal;
+	letter-spacing: 0.012em;
 	color: #ffffff;
+	max-width: 500px;
 }
 .blue-subtitle {
 	font-family: "SourceBold";
@@ -496,11 +514,19 @@ footer {
 	visibility: hidden;
 	position: absolute;
 	content: '';
-	bottom: 10px;
+	bottom: 9px;
 	width: 20px;
 	height: 2px;
 	background-color: #008ed6;
 	margin: 0 1px;
+}
+
+.active::after, .active::before {
+	visibility: visible;
+}
+
+.menu-link:hover::after, .menu-link:hover::before {
+	visibility: visible;
 }
 
 .menu-link::after {
@@ -547,4 +573,44 @@ footer {
 	// right: 50%;
 	
 }
+#features {
+	min-height: 529px;
+	border-bottom: solid 1px #ededed;
+	margin-bottom: 40px;
+}
+.home-image {
+	margin-top: 31px;
+	margin-left: -21px;
+}
 
+.home-text {
+	margin-top: 53px;
+}
+
+.features-main-container {
+	margin-top: 45px;
+	.blue-subtitle {
+		line-height: 50px;
+	}
+	width: 1231px;
+	.regular-title {
+		font-size: 34px;
+		letter-spacing: 0.04em;
+	}
+	.features-container {
+		margin: 0 auto;
+		margin-top: 110px;
+		h4 {
+			margin-top: 35px;
+			font-size: 24px;
+			line-height: 20px;
+			font-weight: 400;
+			color: #1a1a1a;
+		}
+		.p-text {
+			margin-top: 15px;
+			width: 250px;
+		}
+		
+	}
+}

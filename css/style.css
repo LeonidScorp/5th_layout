@@ -110,7 +110,11 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .main-menu-container {
-  display: flex; }
+  display: flex;
+  margin-top: -5px;
+  min-width: 447px;
+  margin-right: 2px;
+  justify-content: space-between; }
 
 .header-desktop {
   display: flex;
@@ -124,8 +128,7 @@ header {
   line-height: 58px;
   font-weight: 600;
   color: #fffefe;
-  text-decoration: none;
-  padding: 0 10px; }
+  text-decoration: none; }
 
 .features-container .col-sm-3 .row {
   display: flex;
@@ -174,14 +177,24 @@ h4.regular-title {
   #home .container {
     height: 550px;
     overflow: hidden; }
+  #home .p-text {
+    max-width: 490px;
+    margin-top: 23px; }
+  #home .buttons {
+    margin-top: 61px; }
+    #home .buttons .col-sm-3 {
+      margin-left: -1px;
+      padding-left: 0;
+      margin-right: 10px; }
 
 .home-title {
+  margin-top: 5px;
   font-size: 48px;
-  line-height: 65px;
-  font-weight: 600;
+  line-height: 48px;
   text-transform: none;
-  letter-spacing: normal;
-  color: #ffffff; }
+  letter-spacing: 0.012em;
+  color: #ffffff;
+  max-width: 500px; }
 
 .blue-subtitle {
   font-family: "SourceBold";
@@ -426,11 +439,17 @@ footer {
   visibility: hidden;
   position: absolute;
   content: '';
-  bottom: 10px;
+  bottom: 9px;
   width: 20px;
   height: 2px;
   background-color: #008ed6;
   margin: 0 1px; }
+
+.active::after, .active::before {
+  visibility: visible; }
+
+.menu-link:hover::after, .menu-link:hover::before {
+  visibility: visible; }
 
 .menu-link::after {
   left: 50%; }
@@ -467,3 +486,36 @@ footer {
 
 .regular-title-left::after {
   right: calc(100% - 44px); }
+
+#features {
+  min-height: 529px;
+  border-bottom: solid 1px #ededed;
+  margin-bottom: 40px; }
+
+.home-image {
+  margin-top: 31px;
+  margin-left: -21px; }
+
+.home-text {
+  margin-top: 53px; }
+
+.features-main-container {
+  margin-top: 45px;
+  width: 1231px; }
+  .features-main-container .blue-subtitle {
+    line-height: 50px; }
+  .features-main-container .regular-title {
+    font-size: 34px;
+    letter-spacing: 0.04em; }
+  .features-main-container .features-container {
+    margin: 0 auto;
+    margin-top: 110px; }
+    .features-main-container .features-container h4 {
+      margin-top: 35px;
+      font-size: 24px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #1a1a1a; }
+    .features-main-container .features-container .p-text {
+      margin-top: 15px;
+      width: 250px; }
