@@ -89,15 +89,16 @@ var $el = $(this), id = $el.attr('href');
     //     cssEase: 'linear'
     // });
 
-    // $('.mentors-slider-container').slick({
-    //     autoplay:true,
-    //     autoplaySpeed: 10000,
-    //     dots: true,
-    //     infinite: true,
-    //     arrows:false,
-    //     speed: 500,
-    //     cssEase: 'linear'
-    // });
+    $('.slider-container').slick({
+        autoplay:false,
+        autoplaySpeed: 10000,
+        dots: true,
+        infinite: true,
+        arrows:false,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2
+    });
 
     
 
