@@ -88,6 +88,7 @@ header {
   width: 160px;
   height: 50px;
   padding: 0;
+  outline: none;
   text-transform: uppercase;
   font-family: "SourceSemiBold";
   font-size: 14px;
@@ -231,6 +232,7 @@ h4.regular-title {
   min-height: 809px; }
 
 .container-testimonals {
+  padding: 0;
   width: 100%;
   min-height: 810px;
   display: flex;
@@ -308,7 +310,8 @@ h4.regular-title {
       padding-right: 0; }
       .container-testimonals .testimonals-links .testimonals-links-container .col-sm-8 {
         margin-left: 2px;
-        margin-right: 35px; }
+        margin-right: 20px;
+        padding-left: 0; }
       .container-testimonals .testimonals-links .testimonals-links-container .col-sm-2 {
         width: min-content;
         padding: 0;
@@ -726,3 +729,93 @@ footer {
 
 .fa-linkedin-in {
   font-size: 21px; }
+
+@media screen and (max-width: 1250px) {
+  .header-desktop {
+    width: 80vw; }
+  #home .home-container {
+    display: flex;
+    justify-content: center; }
+  #home .col-lg-7 {
+    width: 500px;
+    margin: 0 auto; }
+    #home .col-lg-7 .col-sm-3 {
+      width: 170px; }
+  #home .col-lg-5 {
+    display: none; }
+  #home .buttons {
+    display: flex;
+    justify-content: center; }
+  .pricelist {
+    flex-wrap: wrap; }
+  .features-main-container {
+    width: 800px; }
+    .features-main-container .blue-subtitle {
+      line-height: 50px;
+      letter-spacing: 0.057em;
+      font-size: 15px; }
+    .features-main-container .regular-title {
+      font-size: 34px;
+      letter-spacing: 0.042em; }
+    .features-main-container .features-container {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 111px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .features-main-container .features-container h4 {
+        margin-top: 34px;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #1a1a1a; }
+      .features-main-container .features-container .col-sm-3 {
+        margin: 30px;
+        width: 250px; }
+  #about .col-lg-6 {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 450px; }
+    #about .col-lg-6 .about-image {
+      margin: 0; }
+  #about .about-left {
+    text-align: center;
+    margin-bottom: 0; }
+  #about .about-bottom .col-lg-5 {
+    width: 500px;
+    margin-top: 0; }
+  #about .about-bottom .col-lg-6 {
+    width: 100%;
+    text-align: center; }
+  .about-upper .container, .about-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .container-testimonals .slider-container {
+    width: 550px; }
+  .container-testimonals h3 {
+    width: 700px; }
+  .container-testimonals .testimonals-links .testimonals-links-container {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .container-testimonals .testimonals-links .testimonals-links-container .col-sm-8 {
+      width: 700px; }
+    .container-testimonals .testimonals-links .testimonals-links-container .col-sm-2 {
+      margin: 10px; }
+  .pricelist {
+    width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 40px; }
+    .pricelist .col-sm-3, .pricelist .col-sm-3:first-of-type {
+      padding: 0;
+      width: 272px;
+      margin: 20px; }
+    .pricelist .pricing-item {
+      margin: 0; }
+  #contact .contact-data {
+    width: 800px; } }

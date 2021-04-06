@@ -97,9 +97,19 @@ var $el = $(this), id = $el.attr('href');
         arrows:false,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [
+            {
+            breakpoint: 1250,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+            }
+        }
+        ]
     });
 
     
-    
+
     
