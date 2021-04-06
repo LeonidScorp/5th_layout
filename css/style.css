@@ -124,7 +124,8 @@ header {
 
 .main-menu .menu-link {
   font-family: "SourceSans";
-  font-size: 16px;
+  font-size: 15px;
+  letter-spacing: 0.045em;
   line-height: 58px;
   font-weight: 600;
   color: #fffefe;
@@ -155,7 +156,7 @@ header {
 h4.regular-title {
   font-size: 34px;
   text-transform: none;
-  letter-spacing: 0.042em;
+  letter-spacing: 0.04em;
   color: #ffffff; }
 
 .logo {
@@ -180,9 +181,9 @@ h4.regular-title {
   #home .p-text {
     margin-left: 1px;
     max-width: 490px;
-    margin-top: 24px; }
+    margin-top: 22px; }
   #home .buttons {
-    margin-top: 61px; }
+    margin-top: 60px; }
     #home .buttons .col-sm-3 {
       margin-left: 0;
       padding-left: 0;
@@ -191,10 +192,11 @@ h4.regular-title {
 .home-title {
   margin-left: 1px;
   margin-top: 5px;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 44px;
+  line-height: 49px;
+  font-weight: 600;
   text-transform: none;
-  letter-spacing: 0.014em;
+  letter-spacing: 0.052em;
   color: #ffffff;
   max-width: 500px; }
 
@@ -258,9 +260,10 @@ h4.regular-title {
       color: #ffffff; }
       .container-testimonals .slider-container .col-sm-5 .slider-role {
         font-family: "SourceSemiBold";
-        line-height: 10px;
+        line-height: 15px;
         font-size: 14px;
-        letter-spacing: 0.019em; }
+        letter-spacing: 0.013em;
+        margin-left: 1px; }
     .container-testimonals .slider-container .slick-dots {
       bottom: -164px;
       left: 5px; }
@@ -281,7 +284,7 @@ h4.regular-title {
   .container-testimonals .testimonals-links {
     display: flex;
     align-items: center;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 48px;
     font-family: "SourceLight";
     color: #ffffff;
@@ -291,18 +294,21 @@ h4.regular-title {
     width: 100%;
     margin-top: auto; }
     .container-testimonals .testimonals-links h3 {
+      line-height: 50px;
       margin-left: 4px;
-      letter-spacing: 0.023em; }
+      letter-spacing: 0.0122em; }
     .container-testimonals .testimonals-links b {
-      letter-spacing: 0.06em;
-      font-weight: 600; }
+      letter-spacing: 0.045em;
+      font-weight: 600;
+      margin-right: -2px; }
     .container-testimonals .testimonals-links .testimonals-links-container {
-      width: 1200px;
+      width: 1202px;
       margin: auto;
       padding: 0 10px;
       padding-right: 0; }
       .container-testimonals .testimonals-links .testimonals-links-container .col-sm-8 {
-        margin-right: 36px; }
+        margin-left: 2px;
+        margin-right: 35px; }
       .container-testimonals .testimonals-links .testimonals-links-container .col-sm-2 {
         width: min-content;
         padding: 0;
@@ -316,6 +322,11 @@ h4.regular-title {
   color: #ffffff;
   font-family: "SourceItalic";
   max-width: 550px; }
+
+.slider-name {
+  margin-left: 1px;
+  line-height: 40px;
+  letter-spacing: 0.005em; }
 
 .pricing-item {
   height: 490px;
@@ -343,11 +354,11 @@ h4.regular-title {
     .pricing-item .price div {
       margin-top: 15px;
       margin-left: -9px;
-      letter-spacing: 0.05em; }
+      letter-spacing: 0.1em; }
     .pricing-item .price span {
       position: relative;
       top: -18px;
-      left: 1px;
+      left: 5px;
       font-size: 28px; }
     .pricing-item .price p {
       position: relative;
@@ -396,19 +407,38 @@ h4.regular-title {
   transition-duration: .5s; }
 
 #contact {
-  height: 722px;
+  height: 717px;
   background-color: #ededed; }
-  #contact .col-sm-4 {
+  #contact .contact-header {
+    margin-top: 40px; }
+    #contact .contact-header .regular-title-center::after, #contact .contact-header .regular-title-center::before {
+      bottom: -32px; }
+    #contact .contact-header .regular-title-center {
+      letter-spacing: 0.02em; }
+  #contact .contact-data {
+    margin: 0 auto;
+    width: 979px;
+    margin-top: 92px;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #contact .col-sm-4 .image-container {
-      width: 32px;
-      height: 32px; }
-      #contact .col-sm-4 .image-container img {
-        margin: 0 auto; }
-    #contact .col-sm-4 p {
-      width: 190px; }
+    justify-content: space-between; }
+    #contact .contact-data .col-sm-3 {
+      padding: 0;
+      max-width: 180px; }
+      #contact .contact-data .col-sm-3 p, #contact .contact-data .col-sm-3 a {
+        color: #999;
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 26px; }
+      #contact .contact-data .col-sm-3 a {
+        line-height: 45px; }
+  #contact .col-sm-3:first-of-type .contact-text {
+    margin-left: -4px; }
+  #contact .col-sm-3:last-of-type .contact-text {
+    margin-left: -3px;
+    margin-top: 21px; }
+  #contact .col-sm-3:last-of-type .image-container {
+    height: 22px;
+    margin: 5px 0; }
 
 .form-container {
   width: 770px;
@@ -424,7 +454,7 @@ h4.regular-title {
     flex-direction: column; }
     .form-container form input {
       width: 300px;
-      padding-left: 18px;
+      padding-left: 16px;
       margin-bottom: 20px;
       height: 50px;
       color: white;
@@ -436,6 +466,7 @@ h4.regular-title {
       font-size: 14px;
       line-height: 48px;
       font-weight: 700;
+      letter-spacing: 0.025em;
       text-transform: uppercase;
       color: #ffffff; }
     .form-container form textarea {
@@ -453,6 +484,7 @@ h4.regular-title {
       font-family: "SourceSemiBold";
       opacity: 0.2;
       font-size: 14px;
+      letter-spacing: 0.025em;
       font-weight: 700;
       text-transform: uppercase;
       color: #ffffff; }
@@ -466,7 +498,8 @@ h4.regular-title {
       display: flex; }
     .form-container form .submit {
       align-self: flex-end;
-      margin-right: 1px; }
+      margin-right: 1px;
+      border-radius: 2px; }
 
 footer {
   width: 100%;
@@ -478,27 +511,30 @@ footer {
     height: 160px; }
     footer .container .social-links {
       margin: 0 auto;
-      margin-top: 50px;
-      margin-bottom: 35px;
+      margin-top: 53px;
       display: flex; }
-      footer .container .social-links .social-links-item a {
+      footer .container .social-links .social-links-item {
         margin: 0 16px;
-        color: white;
-        opacity: 0.2;
-        transition-property: color;
-        transition-duration: 0.5s; }
-      footer .container .social-links .social-links-item a:hover {
-        color: #008ed6;
-        opacity: 1;
-        transition-property: color;
-        transition-duration: 0.5s; }
+        min-width: 18px;
+        max-width: 19px; }
+        footer .container .social-links .social-links-item a {
+          color: white;
+          opacity: 0.2;
+          transition-property: color;
+          transition-duration: 0.5s; }
+        footer .container .social-links .social-links-item a:hover {
+          color: #008ed6;
+          opacity: 1;
+          transition-property: color;
+          transition-duration: 0.5s; }
     footer .container p {
       font-size: 14px;
-      line-height: 48px;
+      line-height: 67px;
       font-weight: 600;
       text-transform: uppercase;
       color: #444348;
-      margin: 0 auto; }
+      margin: 0 auto;
+      letter-spacing: 0.0165em; }
 
 .google-map {
   width: 100%;
@@ -575,15 +611,17 @@ footer {
   margin-top: 45px;
   width: 1231px; }
   .features-main-container .blue-subtitle {
-    line-height: 50px; }
+    line-height: 50px;
+    letter-spacing: 0.057em;
+    font-size: 15px; }
   .features-main-container .regular-title {
     font-size: 34px;
-    letter-spacing: 0.04em; }
+    letter-spacing: 0.042em; }
   .features-main-container .features-container {
     margin: 0 auto;
-    margin-top: 110px; }
+    margin-top: 111px; }
     .features-main-container .features-container h4 {
-      margin-top: 35px;
+      margin-top: 34px;
       font-size: 24px;
       line-height: 20px;
       font-weight: 400;
@@ -601,11 +639,13 @@ footer {
     margin-left: 0px; }
     .about-upper .right .row .regular-title {
       font-size: 34px;
-      letter-spacing: 0.038em; }
+      letter-spacing: 0.0395em; }
     .about-upper .right .row .p-text {
       max-width: 470px;
-      margin-top: 57px;
+      margin-top: 56px;
       letter-spacing: 0.001em; }
+      .about-upper .right .row .p-text .pixel-perf {
+        letter-spacing: 0.055em; }
   .about-upper .about-image {
     margin-top: -34px;
     margin-left: -10px; }
@@ -613,65 +653,76 @@ footer {
     margin-top: 25px;
     margin-left: 0; }
     .about-upper .about-details div {
-      margin-bottom: -2px; }
+      position: relative;
+      top: 2px; }
   .about-upper .regular-title::after, .about-upper .regular-title::before {
-    bottom: -32px; }
+    bottom: -31px; }
 
 .about-bottom {
   background-color: #f2f2f2;
   min-height: 543px; }
+  .about-bottom .blue-subtitle {
+    line-height: 49px;
+    font-size: 15px;
+    letter-spacing: 0.065em; }
   .about-bottom .col-lg-5 {
     margin-top: 52px;
     margin-left: -15px; }
   .about-bottom .regular-title {
-    font-size: 34px;
-    letter-spacing: 0.0404em; }
+    font-size: 34.3px;
+    letter-spacing: 0.038em; }
   .about-bottom .regular-title::after, .about-bottom .regular-title::before {
     bottom: -32px; }
   .about-bottom .p-text {
-    margin-top: 56px; }
+    margin-top: 56px;
+    letter-spacing: 0.0016em; }
   .about-bottom .about-image {
     margin-top: -27px;
     margin-left: -19px; }
 
 #pricing {
-  min-height: 739px; }
+  min-height: 738px; }
   #pricing .container {
     margin-top: 41px; }
+  #pricing .blue-subtitle {
+    font-size: 15px;
+    letter-spacing: 0.061em; }
   #pricing .regular-title-center {
     font-size: 34px;
-    letter-spacing: 0.035em; }
+    letter-spacing: 0.037em; }
   #pricing .regular-title-center::after, #pricing .regular-title-center::before {
-    bottom: -35px; }
+    bottom: -34px; }
 
 .pricelist {
-  margin-top: 105px;
+  margin-top: 104px;
   display: flex;
   justify-content: space-between; }
   .pricelist .col-sm-3 {
-    margin-left: 28px; }
+    margin-left: 27px; }
+    .pricelist .col-sm-3 .pricing-text {
+      position: relative;
+      left: 3px; }
+    .pricelist .col-sm-3 .btn-order {
+      position: relative;
+      left: 2px; }
   .pricelist .col-sm-3:first-of-type {
-    margin-left: 0; }
+    margin-left: -1px; }
+    .pricelist .col-sm-3:first-of-type .pricing-text {
+      left: 0; }
+    .pricelist .col-sm-3:first-of-type .btn-order {
+      left: 0; }
 
-#contact {
-  min-height: 720px; }
-  #contact .contact-header {
-    margin-top: 40px; }
-    #contact .contact-header .regular-title-center::after, #contact .contact-header .regular-title-center::before {
-      bottom: -32px; }
-  #contact .contact-data {
-    margin: 0 auto;
-    width: 979px;
-    margin-top: 90px;
-    display: flex;
-    justify-content: space-between; }
-    #contact .contact-data .col-sm-3 {
-      padding: 0;
-      max-width: 180px; }
-      #contact .contact-data .col-sm-3 p, #contact .contact-data .col-sm-3 a {
-        color: #999;
-        margin-top: 25px;
-        font-size: 18px;
-        line-height: 26px; }
-      #contact .contact-data .col-sm-3 a {
-        line-height: 45px; }
+.fa-behance {
+  font-size: 19px; }
+
+.fa-dribbble {
+  font-size: 19px; }
+
+.fa-twitter {
+  font-size: 18px; }
+
+.fa-facebook-f {
+  font-size: 18px; }
+
+.fa-linkedin-in {
+  font-size: 21px; }

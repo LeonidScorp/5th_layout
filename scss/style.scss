@@ -135,7 +135,8 @@ header {
 .main-menu {
 	.menu-link {
 		font-family: "SourceSans";
-		font-size: 16px;
+		font-size: 15px;
+		letter-spacing: 0.045em;
 		line-height: 58px;
 		font-weight: 600;
 		color: #fffefe;
@@ -171,7 +172,7 @@ h4.regular-title {
 	font-size: 34px;
 	// font-weight: 600;
 	text-transform: none;
-	letter-spacing: 0.042em;
+	letter-spacing: 0.04em;
 	color: #ffffff;
 }
 .logo {
@@ -204,10 +205,10 @@ h4.regular-title {
 	.p-text {
 		margin-left: 1px;
 		max-width: 490px;
-		margin-top: 24px;
+		margin-top: 22px;
 	}
 	.buttons {
-		margin-top: 61px;
+		margin-top: 60px;
 		.col-sm-3 {
 			margin-left: 0;
 			padding-left: 0;
@@ -219,11 +220,11 @@ h4.regular-title {
 .home-title {
 	margin-left:1px;
 	margin-top: 5px;
-	font-size: 48px;
-	line-height: 48px;
-	// font-weight: 600;
+	font-size: 44px;
+	line-height: 49px;
+	font-weight: 600;
 	text-transform: none;
-	letter-spacing: 0.014em;
+	letter-spacing: 0.052em;
 	color: #ffffff;
 	max-width: 500px;
 }
@@ -294,9 +295,10 @@ h4.regular-title {
 			color: #ffffff;
 			.slider-role {
 				font-family: "SourceSemiBold";
-				line-height: 10px;
+				line-height: 15px;
 				font-size: 14px;
-				letter-spacing: 0.019em;
+				letter-spacing: 0.013em;
+				margin-left: 1px;
 			}
 		}
 		.slick-dots {
@@ -333,17 +335,19 @@ h4.regular-title {
 	.testimonals-links {
 		display: flex;
 		align-items: center;
-		font-size: 34px;
+		font-size: 35px;
 		line-height: 48px;
 		
 		font-family: "SourceLight";
 		h3{
+			line-height: 50px;
 			margin-left: 4px;
-			letter-spacing: 0.023em;
+			letter-spacing: 0.0122em;
 		}
 		b {
-			letter-spacing: 0.06em;
+			letter-spacing: 0.045em;
 			font-weight: 600;
+			margin-right: -2px;
 		}
 		color: #ffffff;
 		font-weight: 300;
@@ -352,12 +356,13 @@ h4.regular-title {
 		width: 100%;
 		margin-top: auto;
 		.testimonals-links-container {
-			width: 1200px;
+			width: 1202px;
 			margin:  auto;
 			padding: 0 10px;
 			padding-right: 0;
 			.col-sm-8 {
-				margin-right: 36px;
+				margin-left: 2px;
+				margin-right: 35px;
 			}
 			.col-sm-2 {
 				width: min-content;
@@ -376,7 +381,11 @@ h4.regular-title {
 	font-family: "SourceItalic";
 	max-width: 550px;
 }
-
+.slider-name {
+	margin-left: 1px;
+	line-height: 40px;
+	letter-spacing: 0.005em;
+}
 .pricing-item {
 	height: 490px;
 	width: 272px;
@@ -405,12 +414,12 @@ h4.regular-title {
 		div {
 			margin-top: 15px;
 			margin-left: -9px;
-			letter-spacing: 0.05em;
+			letter-spacing: 0.1em;
 		}
 		span {
 			position: relative;
 			top: -18px;
-			left:1px;
+			left:5px;
 			font-size: 28px;
 		}
 		p {
@@ -471,23 +480,53 @@ h4.regular-title {
 }
 
 #contact {
-	height: 722px;
-	background-color: #ededed;
-	.col-sm-4 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		.image-container {
-			width: 32px;
-			height: 32px;
-			img {
-				margin: 0 auto;
-			}
+	height: 717px;
+	.contact-header {
+		margin-top: 40px;
+		.regular-title-center::after, .regular-title-center::before {
+			bottom: -32px;
 		}
-		p {
-			width: 190px;
+		.regular-title-center {
+			letter-spacing: 0.02em;
 		}
 	}
+	.contact-data {
+		margin: 0 auto;
+		width: 979px;
+		.col-sm-3 {
+			padding: 0;
+			max-width: 180px;
+			p, a {
+				color: #999;
+				margin-top: 24px;
+				font-size: 18px;
+				line-height: 26px;
+			}
+			a {
+				line-height: 45px;
+			}
+		}
+		margin-top: 92px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.col-sm-3:first-of-type {
+		.contact-text {
+			margin-left: -4px;
+			
+		}
+	}
+	.col-sm-3:last-of-type {
+		.contact-text {
+			margin-left: -3px;
+			margin-top: 21px;
+		}
+		.image-container {
+			height: 22px;
+			margin: 5px 0;
+		}
+	}
+	background-color: #ededed;
 }
 
 .form-container {
@@ -504,7 +543,7 @@ h4.regular-title {
 		flex-direction: column;
 		input {
 			width: 300px;
-			padding-left: 18px;
+			padding-left: 16px;
 			margin-bottom: 20px;
 			height: 50px;
 			color:white;
@@ -517,6 +556,7 @@ h4.regular-title {
 			font-size: 14px;
 			line-height: 48px;
 			font-weight: 700;
+			letter-spacing: 0.025em;
 			text-transform: uppercase;
 			color: #ffffff;
 		}
@@ -537,6 +577,7 @@ h4.regular-title {
 			font-family: "SourceSemiBold";
 			opacity: 0.2;
 			font-size: 14px;
+			letter-spacing: 0.025em;
 			font-weight: 700;
 			text-transform: uppercase;
 			color: #ffffff;
@@ -555,6 +596,7 @@ h4.regular-title {
 		.submit {
 			align-self:flex-end;
 			margin-right: 1px;
+			border-radius: 2px;
 		}
 	}
 }
@@ -568,12 +610,14 @@ footer {
 		height: 160px;
 		.social-links {
 			margin: 0 auto;
-			margin-top: 50px;
-			margin-bottom: 35px;
+			margin-top: 53px;
 			display: flex;
 			.social-links-item {
+				margin: 0 16px;
+				min-width: 18px;
+				max-width: 19px;
 				a {
-					margin: 0 16px;
+					
 					color: white;
 					opacity: 0.2;
 					transition-property: color;
@@ -589,18 +633,18 @@ footer {
 		}
 		p {
 			font-size: 14px;
-			line-height: 48px;
+			line-height: 67px;
 			font-weight: 600;
 			text-transform: uppercase;
 			color: #444348;
 			margin: 0 auto;
+			letter-spacing: 0.0165em;
 		}
 	}
 }
 .google-map {
 	width: 100%;
 	height: 370px;
-
 }
 
 .menu-link::after, .menu-link::before{
@@ -684,17 +728,19 @@ footer {
 	margin-top: 45px;
 	.blue-subtitle {
 		line-height: 50px;
+		letter-spacing: 0.057em;
+		font-size: 15px;
 	}
 	width: 1231px;
 	.regular-title {
 		font-size: 34px;
-		letter-spacing: 0.04em;
+		letter-spacing: 0.042em;
 	}
 	.features-container {
 		margin: 0 auto;
-		margin-top: 110px;
+		margin-top: 111px;
 		h4 {
-			margin-top: 35px;
+			margin-top: 34px;
 			font-size: 24px;
 			line-height: 20px;
 			font-weight: 400;
@@ -716,12 +762,15 @@ footer {
 		margin-left: 0px;
 		.regular-title {
 			font-size: 34px;
-			letter-spacing: 0.038em;
+			letter-spacing: 0.0395em;
 		}
 		.p-text {
 			max-width: 470px;
-			margin-top: 57px;
+			margin-top: 56px;
 			letter-spacing: 0.001em;
+			.pixel-perf {
+				letter-spacing: 0.055em;
+			}
 		}
 	}
 	.about-image {
@@ -732,29 +781,36 @@ footer {
 		margin-top: 25px;
 		margin-left: 0;
 		div {
-			margin-bottom: -2px;
+			position: relative;
+			top: 2px;
 		}
 	}
 	.regular-title::after, .regular-title::before {
-		bottom: -32px;
+		bottom: -31px;
 	}
 }
 .about-bottom {
 	background-color: #f2f2f2;
 	min-height: 543px;
+	.blue-subtitle {
+		line-height: 49px;
+		font-size: 15px;
+		letter-spacing: 0.065em;
+	}
 	.col-lg-5 {
 		margin-top: 52px;
 		margin-left: -15px;
 	}
 	.regular-title {
-		font-size: 34px;
-		letter-spacing: 0.0404em;
+		font-size: 34.3px;
+		letter-spacing: 0.038em;
 	}
 	.regular-title::after, .regular-title::before {
 		bottom: -32px;
 	}
 	.p-text {
 		margin-top: 56px;
+		letter-spacing: 0.0016em;
 	}
 	.about-image {
 		margin-top: -27px;
@@ -762,57 +818,62 @@ footer {
 	}
 }
 #pricing {
-	min-height: 739px;
+	min-height: 738px;
 	.container {
 		margin-top: 41px;
 	}
+	.blue-subtitle {
+		font-size: 15px;
+		letter-spacing: 0.061em;
+	}
 	.regular-title-center {
 		font-size: 34px;
-		letter-spacing: 0.035em;
+		letter-spacing: 0.037em;
 	}
 	.regular-title-center::after, .regular-title-center::before {
-		bottom: -35px;
+		bottom: -34px;
 	}
 }
 
 .pricelist {
-	margin-top: 105px;
+	margin-top: 104px;
 	display: flex;
 	justify-content: space-between;
 	.col-sm-3 {
-		margin-left:28px;
+		margin-left:27px;
+		.pricing-text {
+			position: relative;
+			left:3px;
+		}
+		.btn-order {
+			position: relative;
+			left:2px;
+		}
 		// padding: 0;
 	}
 	.col-sm-3:first-of-type {
-		margin-left: 0;
+		margin-left: -1px;
+		.pricing-text {
+			left:0;
+		}
+		.btn-order {
+			left:0;
+		};
 	}
+	
 }
-#contact {
-	min-height: 720px;
-	.contact-header {
-		margin-top: 40px;
-		.regular-title-center::after, .regular-title-center::before {
-			bottom: -32px;
-		}
-	}
-	.contact-data {
-		margin: 0 auto;
-		width: 979px;
-		.col-sm-3 {
-			padding: 0;
-			max-width: 180px;
-			p, a {
-				color: #999;
-				margin-top: 25px;
-				font-size: 18px;
-				line-height: 26px;
-			}
-			a {
-				line-height: 45px;
-			}
-		}
-		margin-top: 90px;
-		display: flex;
-		justify-content: space-between;
-	}
+.fa-behance {
+	font-size: 19px;
+}
+.fa-dribbble {
+	font-size: 19px;
+}
+.fa-twitter {
+	font-size: 18px;
+}
+.fa-facebook-f {
+	font-size: 18px;
+}
+.fa-linkedin-in {
+	font-size: 21px;
 }
