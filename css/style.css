@@ -123,14 +123,16 @@ header {
   margin: 0 auto;
   justify-content: space-between; }
 
-.main-menu .menu-link {
-  font-family: "SourceSans";
-  font-size: 15px;
-  letter-spacing: 0.045em;
-  line-height: 58px;
-  font-weight: 600;
-  color: #fffefe;
-  text-decoration: none; }
+.main-menu {
+  padding: 0; }
+  .main-menu .menu-link {
+    font-family: "SourceSans";
+    font-size: 15px;
+    letter-spacing: 0.045em;
+    line-height: 58px;
+    font-weight: 600;
+    color: #fffefe;
+    text-decoration: none; }
 
 .features-container .col-sm-3 .row {
   display: flex;
@@ -177,6 +179,7 @@ h4.regular-title {
   background-size: cover;
   min-height: 550px; }
   #home .container {
+    padding: 0;
     height: 550px;
     overflow: hidden; }
   #home .p-text {
@@ -357,11 +360,11 @@ h4.regular-title {
     .pricing-item .price div {
       margin-top: 15px;
       margin-left: -9px;
-      letter-spacing: 0.1em; }
+      letter-spacing: 0.06em; }
     .pricing-item .price span {
       position: relative;
       top: -18px;
-      left: 5px;
+      left: 4px;
       font-size: 28px; }
     .pricing-item .price p {
       position: relative;
@@ -716,10 +719,10 @@ footer {
       left: 0; }
 
 .fa-behance {
-  font-size: 19px; }
+  font-size: 18px; }
 
 .fa-dribbble {
-  font-size: 19px; }
+  font-size: 18px; }
 
 .fa-twitter {
   font-size: 18px; }
@@ -730,9 +733,48 @@ footer {
 .fa-linkedin-in {
   font-size: 21px; }
 
+.navbar-toggle {
+  margin-right: 0; }
+  .navbar-toggle .icon-bar {
+    background-color: white; }
+
+.main-menu-mobile {
+  text-align: center;
+  position: fixed;
+  right: -210px;
+  top: 90px;
+  transition: right 0.5s;
+  background-color: #14141a; }
+  .main-menu-mobile .menu-link {
+    font-family: "SourceSans";
+    font-size: 15px;
+    letter-spacing: 0.045em;
+    line-height: 58px;
+    font-weight: 600;
+    color: #fffefe;
+    text-decoration: none; }
+  .main-menu-mobile .main-menu-container {
+    min-width: 200px;
+    flex-direction: column; }
+
+.shown {
+  right: 0;
+  transition-duration: .5s; }
+
+.transparent-bg {
+  background-color: transparent;
+  transition: background-color .5s; }
+
+.header-bg {
+  background-color: #15141a;
+  transition: background-color .5s; }
+
 @media screen and (max-width: 1250px) {
   .header-desktop {
     width: 80vw; }
+  #home .container {
+    height: auto;
+    padding-bottom: 20px; }
   #home .home-container {
     display: flex;
     justify-content: center; }
@@ -749,7 +791,8 @@ footer {
   .pricelist {
     flex-wrap: wrap; }
   .features-main-container {
-    width: 800px; }
+    width: 800px;
+    padding: 0; }
     .features-main-container .blue-subtitle {
       line-height: 50px;
       letter-spacing: 0.057em;
@@ -760,7 +803,7 @@ footer {
     .features-main-container .features-container {
       width: 800px;
       margin: 0 auto;
-      margin-top: 111px;
+      margin-top: 60px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
@@ -817,5 +860,125 @@ footer {
       margin: 20px; }
     .pricelist .pricing-item {
       margin: 0; }
+  #contact .container {
+    padding: 0; }
+    #contact .container .row {
+      margin: 0; }
   #contact .contact-data {
-    width: 800px; } }
+    width: 100%; }
+  .slick-dots {
+    position: static;
+    margin: 40px auto; } }
+
+@media (max-width: 1024px) {
+  .navbar-toggle {
+    display: block; }
+  .main-menu {
+    display: none; } }
+
+@media (min-width: 1025px) {
+  .main-menu-mobile {
+    display: none; } }
+
+@media (max-width: 900px) {
+  .features-main-container {
+    width: 300px;
+    padding: 0; }
+    .features-main-container .blue-subtitle {
+      line-height: 50px;
+      letter-spacing: 0.057em;
+      font-size: 15px; }
+    .features-main-container .regular-title {
+      font-size: 34px;
+      letter-spacing: 0.042em; }
+    .features-main-container .features-container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .features-main-container .features-container h4 {
+        margin-top: 34px;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #1a1a1a; }
+      .features-main-container .features-container .col-sm-3 {
+        padding: 0;
+        margin: 30px auto;
+        width: 250px; }
+  #contact {
+    height: auto; }
+    #contact .contact-data {
+      display: flex;
+      flex-direction: column;
+      width: 200px; }
+    #contact .col-sm-3 {
+      width: 180px;
+      margin: 20px auto; }
+  .form-container {
+    position: static;
+    margin-top: 20px;
+    width: 320px;
+    height: auto;
+    margin-bottom: 40px; }
+    .form-container form {
+      padding: 0;
+      align-items: center; }
+      .form-container form .input-container {
+        margin: 0; }
+        .form-container form .input-container:first-child {
+          margin-top: 10px; }
+      .form-container form textarea {
+        margin-bottom: 10px; }
+      .form-container form .submit {
+        align-self: center;
+        margin-bottom: 10px; }
+      .form-container form .text-container {
+        flex-direction: column;
+        align-items: center; } }
+
+@media (max-width: 800px) {
+  #home .col-lg-7 {
+    width: 90vw;
+    max-width: 500px; }
+  .pricelist {
+    width: 300px; }
+  .about-image {
+    width: 60vw; }
+  .container-testimonals .slider-container {
+    min-width: 300px;
+    max-width: 550px;
+    width: 90vw; }
+  .container-testimonals h3 {
+    width: 90vw; }
+  .container-testimonals .testimonals-links {
+    height: auto;
+    min-height: 170px; }
+    .container-testimonals .testimonals-links .testimonals-links-container {
+      padding: 10px 0;
+      display: flex;
+      width: 90vw;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .container-testimonals .testimonals-links .testimonals-links-container .col-sm-8 {
+        width: 90vw; }
+      .container-testimonals .testimonals-links .testimonals-links-container .col-sm-2 {
+        margin: 10px; }
+  #about .col-lg-6 {
+    width: 90vw;
+    max-width: 450px; }
+  #about .about-bottom .col-lg-5 {
+    width: 90vw;
+    max-width: 500px; } }
+
+@media (max-width: 500px) {
+  #home .buttons {
+    flex-direction: column; }
+  #home .btn {
+    margin: 10px 0; }
+  #features .row {
+    margin: 0; }
+  #features .features-container {
+    margin-top: 60px; } }
