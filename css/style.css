@@ -97,6 +97,11 @@ header {
   letter-spacing: 0.0004em;
   color: #ffffff;
   background-color: #008ed6; }
+  .btn:focus {
+    color: #fff;
+    outline: none; }
+  .btn:active {
+    outline: none; }
 
 .p-text {
   font-size: 18px;
@@ -255,6 +260,7 @@ h4.regular-title {
     margin: 0 auto;
     margin-top: 120px; }
     .container-testimonals .slider-container .col-lg-6 {
+      outline: none;
       margin-left: 15px; }
       .container-testimonals .slider-container .col-lg-6 .slider-bottom {
         margin-top: 23px; }

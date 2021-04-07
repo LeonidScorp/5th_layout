@@ -96,6 +96,13 @@ header {
 	height: 50px;
 	padding: 0;
 	outline: none;
+	&:focus {
+		color: #fff;
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
 	text-transform: uppercase;
 	font-family: "SourceSemiBold";
 	font-size: 14px;
@@ -286,6 +293,7 @@ h4.regular-title {
 		margin: 0 auto;
 		margin-top: 120px;
 		.col-lg-6 {
+			outline: none;
 			margin-left: 15px;
 			.slider-bottom {
 				.col-sm-2 {
