@@ -109,6 +109,11 @@ header {
 .btn-secondary {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2); }
+  .btn-secondary:hover {
+    border: none;
+    color: white;
+    background-color: #008ed6;
+    transition: all .5s; }
 
 .main-menu-container {
   display: flex;

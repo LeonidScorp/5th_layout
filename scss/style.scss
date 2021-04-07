@@ -117,6 +117,12 @@ header {
 .btn-secondary {
 	background-color: transparent;
 	border: 1px solid rgba(255,255,255,0.2);
+	&:hover {
+		border: none;
+		color: white;
+		background-color: #008ed6;
+		transition: all .5s;
+	}
 }
 .main-menu-container {
 	display: flex;
@@ -923,6 +929,7 @@ footer {
 	background-color: #15141a;
 	transition: background-color .5s;
 }
+
 @media screen and (max-width:1250px) {
 	.header-desktop {
 		width: 80vw;
